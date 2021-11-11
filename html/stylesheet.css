@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0;
+    background: var(--black);
+}
+*{
+    font-family: Roboto, Tahoma, serif;
+}
+html:root{
+    --green: #6EAD3A;
+    --black: #222022;
+    --grey: #4C4947;
+    --white: #EFEDEF;
+    --light-grey: #EFEDEF;
+}
+
+#menu{
+    width: 100%;
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    max-width: 100%;
+    border-bottom: 2px var(--grey) solid;
+}
+#menu a{
+    color: var(--white);
+    text-decoration: none;
+    margin: 15px;
+}
+#menu > div{
+    margin: 0 15px 0 15px;
+}
+#shortlink a{
+    color: var(--green);
+    font-size: 18px;
+}
+#shortlink a:first-child{
+    font-size: 24px;
+}
+
+#user-auth{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    min-width: 250px;
+}
+
+#reg{
+    background: var(--white);
+    color: var(--black);
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+#reg a{
+    color: var(--black);
+}
+#log{
+    background: var(--grey);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+#log a{
+    color: var(--white);
+}
+
+
+main{
+    padding: 100px 0 100px 0;
+    background: var(--black);
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form input:focus{
+    outline: none;
+}
+form input::placeholder{
+    color: #EFEDEF;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+form input{
+    padding: 5px 0 5px 0;
+    width: 200px;
+    color: #EFEDEF;
+    background: none;
+    border: 0;
+    border-bottom: #6EAD3A 2px solid;
+    margin: 15px 0 15px 0;
+}
+
+form input:focus::placeholder{
+    transition: all 0.3s ease-in-out;
+    font-size: 10px;
+    color: var(--grey);
+}
+form {
+    margin: 100px 0 100px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-form{
+    cursor: pointer;
+    padding: 5px 0 5px 0;
+    width: 200px;
+    border: 0;
+    background: var(--green);
+    color: var(--black);
+    outline: none;
+}
+.button-form:focus{
+    outline: none;
+}
+
+main h1{
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    color: var(--white);
+}
+#profile div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    margin: 0 50px 0 50px;
+}
+#profile-list{
+    display: flex;
+    flex-flow: row nowrap;
+}
+#profile-list img{
+}
+
+#find-ticket{
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+#find-ticket input[type="text"]{
+    width: 60%;
+}
+#booking-ticket{
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+#all-tickets{
+    color: var(--white);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#all-tickets-main{
+    padding: 100px 30px 100px 30px;
+    background: var(--black);
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#select-seat{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+#settings-select-seat{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#select-seat{
+    justify-content: space-evenly;
+    width: 100%;
+}
+#settings-select-seat div{
+    flex-flow: column nowrap;
+    margin: 0;
+}
+
+#settings-select-seat div input[type="button"]{
+    padding: 5px;
+    margin: 5px 5px 0 0;
+    background: var(--white);
+}
+#userNumberSeat{
+    background: none;
+}

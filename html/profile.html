@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход в личный кабинет</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<header id="menu">
+    <div id="shortlink">
+        <a href="index.html">Главная</a>
+        <a href="search.html">поиск билетов</a>
+    </div>
+
+    <div id="user-auth">
+        <a href="register.html"><div id="reg">Регистрация</div></a>
+        <a href="login.html"><div id="log">Вход</div></a>
+    </div>
+</header>
+<main>
+    <h1>Личный кабинет</h1>
+    <div id="profile-list">
+        <div><img src="Frame2.png"></div>
+        <form id="profile">
+            <div>
+                <label for="userLastName">Фамилия: </label><input required type="text" name="userLastName" id="userLastName" placeholder="Ваша фамилия">
+                <label for="userFirstName">Имя: </label><input required type="text" name="userFirstName" id="userFirstName" placeholder="Ваше имя">
+                <label for="userPatronomyc">Отчество: </label><input required type="text" name="userPatronomyc" id="userPatronomyc" placeholder="Ваше отчество">
+                <a href="profile.html"><input type="button" class="button-form" value="Сохранить"></a>
+            </div>
+            <div>
+                <input required type="tel" name="newUserPhone" id="userPhone" placeholder="Новый номер телефона">
+                <input required type="password" name="newUserPhone" id="userPass" placeholder="Новый пароль">
+            </div>
+
+        </form>
+    </div>
+
+</main>
+</body>
+</html>
